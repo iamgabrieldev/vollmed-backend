@@ -1,0 +1,1 @@
+alter table pacientes add column cpf varchar(20) unique not null;
