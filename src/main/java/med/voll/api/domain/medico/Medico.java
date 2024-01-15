@@ -41,6 +41,13 @@ public class Medico {
 
     }
 
+    public Medico(String joao, String mail, String crm, Especialidade especialidade) {
+        this.nome = joao;
+        this.email = mail;
+        this.crm = crm;
+        this.especialidade = especialidade;
+    }
+
     public void atualizarInformacoes(DadosAtualizacaoMedico dados) {
         if (dados.nome() != null) {
             this.nome = dados.nome();

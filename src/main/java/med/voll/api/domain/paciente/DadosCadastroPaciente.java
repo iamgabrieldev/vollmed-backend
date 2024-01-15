@@ -24,4 +24,5 @@ public record DadosCadastroPaciente(
         @Valid
         DadosEndereco endereco) {
 
+
 }

@@ -23,4 +23,12 @@ public record DadosCadastroMedico(
         Especialidade especialidade,
         @NotNull(message = "{endereco.obrigatorio}")
         @Valid DadosEndereco endereco) {
+        public DadosCadastroMedico(DadosCadastroMedico dadosCadastro) {
+                this(dadosCadastro.nome(),
+                        dadosCadastro.email(),
+                        dadosCadastro.telefone(),
+                        dadosCadastro.crm(),
+                        dadosCadastro.especialidade(),
+                        dadosCadastro.endereco());
+        }
 }

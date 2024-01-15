@@ -36,6 +36,12 @@ public class Paciente {
         this.endereco = new Endereco(dados.endereco());
     }
 
+    public Paciente(String maria, String mail, String cpf) {
+        this.nome = maria;
+        this.email = mail;
+        this.cpf = cpf;
+    }
+
     public void atualizarInformacoes(DadosAtualizacaoPaciente dados) {
         this.nome = dados.nome();
 
